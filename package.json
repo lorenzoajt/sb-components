@@ -20,6 +20,9 @@
   "files": [
     "dist/"
   ],
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "release": {
     "branches": [
       "main"
@@ -38,7 +41,8 @@
     "build-storybook": "storybook build",
     "chromatic": "npx chromatic --project-token=chpt_aba885a4d3d2cdb",
     "clean": "rimraf dist/",
-    "copyfiles": "copyfiles -u 1 src/**/*.css dist/"
+    "copyfiles": "copyfiles -u 1 src/**/*.css dist/",
+    "push:npm": "np"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.5.1",
@@ -60,6 +64,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "eslint-plugin-storybook": "^0.6.15",
+    "np": "^8.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^5.0.5",
